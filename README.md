@@ -78,6 +78,8 @@ The model achieves ~88% accuracy and performs reliably in real-time conditions w
 
 ## 🎥 Demo
 
+▶️ Watch Demo:  
+[https://github.com/DARKBOOK69/ai-pushup-form-corrector/blob/main/pushups-demo.gif]
 
 
 ## ▶️ How to Run
