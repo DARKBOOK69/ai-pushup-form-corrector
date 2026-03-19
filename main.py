@@ -114,10 +114,19 @@ while cap.isOpened():
                 else:
                     bad_reps += 1
                     speak("Fix your form")
-    # UI
-    cv2.rectangle(image, (0, 0), (w, 70), color, -1)
+
+    cv2.rectangle(image, (0, 0), (w, 70), (0, 0, 0), -1)
+
+    
+    if feedback == "GOOD FORM":
+        text_color = (0, 255, 0) 
+    elif feedback == "GET INTO PUSHUP POSITION":
+        text_color = (0, 0, 255) 
+    else:
+        text_color = (0, 165, 255) 
+
     cv2.putText(image, f"PUSHUPS | {feedback}", 
-                (20, 45), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2)
+                (20, 45), cv2.FONT_HERSHEY_SIMPLEX, 0.8, text_color, 2)
 
     cv2.putText(image, f"REPS: {counter}", 
                 (w//2 - 80, h-40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2)
