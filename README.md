@@ -115,7 +115,7 @@ ai-pushup-form-corrector/
 │── README.md
 ```
 
----
+--
 
 ## 🚀 Future Improvements
 
